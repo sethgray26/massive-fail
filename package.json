@@ -1,0 +1,25 @@
+{
+  "name": "massive-fail",
+  "version": "1.0.0",
+  "description": "Bad patterns with massive-js",
+  "main": "server.js",
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/statianzo/massive-fail.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/statianzo/massive-fail.git",
+  "dependencies": {
+    "bcrypt": "^3.0.2",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "massive": "^5.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
