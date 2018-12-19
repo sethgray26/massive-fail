@@ -12,8 +12,8 @@ app.post('/search', (req, res) => {
   const db = req.app.get('db');
   const name = req.body.name;
   db.query(
-    "SELECT * FROM injuries " +
-    "WHERE name like '" + name + "'"
+    "SELECT * FROM movies " +
+    "WHERE title like '" + name + "'"
   ).then(results => {
     res.send(results);
   });
@@ -23,7 +23,7 @@ app.post('/login', (req, res) => {
   const db = req.app.get('db');
   const email = req.body.email;
   const password = req.body.password;
-  db.getUser({email: email}).then(users => {
+  db.getUser({ email: email }).then(users => {
     const user = users[0];
     if (user && user.password === password) {
       res.send("Welcome!");
